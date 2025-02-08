@@ -43,7 +43,7 @@
         programs.shfmt.enable = true;
         programs.shellcheck.enable = true;
         settings.formatter.shellcheck.options = [ "-s" "sh" ];
-        settings.global.excludes = [ "LICENSE" ];
+        settings.global.excludes = [ "LICENSE" "*.txt" ];
       };
 
     in
