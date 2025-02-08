@@ -30,10 +30,6 @@
       packages = {
         exampleNodeModules = exampleNodeModules;
         formatting = treefmtEval.config.build.check self;
-        snapshot-test = pkgs.runCommandNoCCLocal "snapshot-test" { } ''
-          mkdir -p $out/snapshot/nested
-          echo "foo" > $out/snapshot/nested/file.txt
-        '';
       };
 
       gcroot = packages // {
